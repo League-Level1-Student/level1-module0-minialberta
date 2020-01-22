@@ -15,13 +15,16 @@ void setup(){
 }
 
 void draw(){
-        image(pictureOfRecord, 0, 0);  //in draw method
-        if (mousePressed){angle=angle+1;
+
+        angle=angle+10;
+        if (mousePressed){
+          
         
         rotateImage(pictureOfRecord, angle);
         song.play();
   song.pause();
 }
+        image(pictureOfRecord, 0, 0);  //in draw method
 }
   void rotateImage(PImage image, int amountToRotate) {
         translate(width/2, height/2);
